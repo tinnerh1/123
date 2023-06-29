@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #F6F9FF !important;
+    margin: 0;
+}
+
+
+
+/* CSS for Sidebar  */
+
+.main{
+    display: flex;
+}
+
+.sidebar{
+    background: #fff;
+    width: 280px;
+    height: 100vh;
+    box-shadow: 0 0 8px  #c3d8ff;
+    transition: all 0.4s ease-in;
+}
+
+.sidebar.close{
+    background: #fff;
+    width: 75px;
+    height: 100vh;
+    box-shadow: 0 0 8px  #c3d8ff;
+}
+
+.sidebar .sidebar-logo{
+    padding: 10px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.sidebar .sidebar-logo .logo-details{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-logo #logo{
+    color: #6F7DF4;
+    font-size: 35px;
+    transition: all 0.4s ease;    
+}
+
+.sidebar.close .sidebar-logo #logo,
+.sidebar.close .sidebar-logo a{
+    display: none;
+}
+
+
+.sidebar .sidebar-logo a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #012970;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.sidebar .sidebar-logo i{
+    font-size: 30px;
+    color: #012970;
+    transition: all 0.4s ease;
+}
+
+.sidebar.close .sidebar-logo i{
+    transform: translateX(-30%);
+}
+
+.sidebar .sidebar-content span{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #6F7DF4;
+    color: #fff;
+    position: absolute;
+    margin-left: 45px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar.close .sidebar-content ul li:hover span{
+    padding: 4px 10px;
+    border-radius: 10px;
+    background: #6F7DF4;
+    color: #fff;
+    position: absolute;
+    margin-left: 45px;
+    opacity: 1;
+}
+
+.sidebar .sidebar-content ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.sidebar .sidebar-content ul li{
+    margin-left: -15px;
+    margin-top: 2px;
+    padding: 10px 0;
+    font-size: 19px;
+    border-radius: 8px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar.close .sidebar-content ul li{
+    width: 40px;
+}
+
+.sidebar .sidebar-content ul li:hover{
+    background: #F3F6FD;
+}
+
+.sidebar.close .sidebar-content ul li:hover{
+    background: #F3F6FD;
+    width: 40px;
+}
+
+.sidebar .sidebar-content a{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar.close .sidebar-content a{
+    display: none;
+}
+
+.sidebar .sidebar-content a, .sidebar .sidebar-content i{
+    margin-left: 10px;
+    color: #012970;
+}
+
+
+.main .home-content{
+ padding: 14px;
+ background: #fff;
+ height: 60px;
+ width: 100%;
+ color: #012970;
+ box-shadow: 10px 1px 8px  #c3d8ff;
+}
+
+
+
+
+
+/* CSS for Form cadastro */
+
+
+.container .form-content{
+    margin-top: 90px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 0.3rem #888;
+}
+
+.container .form-content h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.container .form-content label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container .form-content input{
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container .form-content button{
+    border-radius: 20px;
+    float: right;
+    padding: 8px 90px;
+}
